@@ -1,0 +1,11 @@
+#!bin/bash
+
+# Varying Ki values from 1 to 4
+./main -i 1.0 -m 1.0 -n 1.0 -f 0.2 -s 0.01 -T 200 -o ki-1.txt
+./main -i 2.0 -m 1.0 -n 1.0 -f 0.2 -s 0.01 -T 200 -o ki-2.txt
+./main -i 3.0 -m 1.0 -n 1.0 -f 0.2 -s 0.01 -T 200 -o ki-3.txt
+./main -i 4.0 -m 1.0 -n 1.0 -f 0.2 -s 0.01 -T 200 -o ki-4.txt
+
+
+#plotting graphs for different ki values
+gnuplot -e "set terminal png enhanced size 1000, 5000; set ouput 'diff-ki.png'; set multiplot layout 4,1; plot 'ki-1.txt' w l; plot 'ki-2.txt' w l; plot 'ki-3.xt' w l; plot 'ki-4.txt' w l;"
