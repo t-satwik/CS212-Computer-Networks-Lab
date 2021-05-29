@@ -1,0 +1,5 @@
+gcc Q1-client.c -o client
+./client
+
+gcc Q1-server.c -o server
+./server

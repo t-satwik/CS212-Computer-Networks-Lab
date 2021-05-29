@@ -1,0 +1,28 @@
+For Q1:
+gcc 190030043_time_server.c -o server
+./server 50043
+
+gcc 190030043_time_client.c -o client
+./client 127.0.0.1 50043
+
+
+
+For Q2:
+gcc 190030043_dns_server.c -o server
+./server 50043
+
+gcc 190030043_dns_client.c -o client
+./client 127.0.0.1 50043
+
+
+
+For Q3:
+gcc 190030043_combined_server.c -o server
+./server 50043
+
+gcc 190030043_time_client.c -o client1
+./client1 127.0.0.1 50043
+
+gcc 190030043_dns_client.c -o client2
+./client2 127.0.0.1 50043
+
